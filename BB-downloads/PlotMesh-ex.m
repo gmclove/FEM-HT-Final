@@ -2,9 +2,11 @@ Ne=8;                            %number of nodes per element
 
 df=3;                            %degrees of freedom per node
 
-ex1=importdata('CO.txt');
+% ex1=importdata('CO.txt');
+ex1=importdata('CO_kagome_hole.txt');
 
-ex2=importdata('CM.txt');
+% ex2=importdata('CM.txt');
+ex2=importdata('CM_kagome_hole.txt');
 
 CO=ex1(:,2:4);
 

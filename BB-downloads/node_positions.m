@@ -1,0 +1,10 @@
+for pp=1:NCM
+  Xe=CO(CM(pp,:),1);       %x values for each element at 8 corners
+  Ye=CO(CM(pp,:),2);       %y values for each element at 8 corners
+  Ze=CO(CM(pp,:),3);       %x values for each element at 8 corners
+for rr=1:NG   % NG: # of Gaussian points along each side
+  for ss=1:NG
+    for t t=1:NG
+  xi=[xP(rr);yP(ss);zP(tt)];
+  [N, J1, J] = Hexa_Jacobian(xi,Xe,Ye,Ze);
+  IJ=J\J1;
